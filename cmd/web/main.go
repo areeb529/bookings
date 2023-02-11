@@ -1,15 +1,17 @@
 package main
 
 import (
+	"encoding/gob"
 	"fmt"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/areeb529/bookings/pkg/config"
-	"github.com/areeb529/bookings/pkg/handlers"
-	"github.com/areeb529/bookings/pkg/render"
+	"github.com/areeb529/bookings/internal/config"
+	"github.com/areeb529/bookings/internal/handlers"
+	"github.com/areeb529/bookings/internal/models"
+	"github.com/areeb529/bookings/internal/render"
 )
 
 const portNumber = ":8080"
@@ -18,7 +20,8 @@ var app config.AppConfig
 var session *scs.SessionManager
 
 func main() {
-
+	// what am I going to put in the session
+	gob.Register(models.Reservation{})
 	//change this to true when in production
 	app.InProduction = false
 
