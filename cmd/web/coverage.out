@@ -1,0 +1,10 @@
+mode: set
+github.com/areeb529/bookings/cmd/web/main.go:22.13,24.16 2 0
+github.com/areeb529/bookings/cmd/web/main.go:24.16,26.3 1 0
+github.com/areeb529/bookings/cmd/web/main.go:30.2,38.16 4 0
+github.com/areeb529/bookings/cmd/web/main.go:41.18,56.16 10 1
+github.com/areeb529/bookings/cmd/web/main.go:56.16,59.3 2 0
+github.com/areeb529/bookings/cmd/web/main.go:60.2,67.12 6 1
+github.com/areeb529/bookings/cmd/web/middleware.go:17.45,27.2 3 1
+github.com/areeb529/bookings/cmd/web/middleware.go:29.50,31.2 1 1
+github.com/areeb529/bookings/cmd/web/routes.go:12.49,43.2 18 1
